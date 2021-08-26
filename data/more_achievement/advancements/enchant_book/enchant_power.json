@@ -1,0 +1,35 @@
+{
+    "parent": "more_achievement:enchant_book/enchant_flame",
+    "display": {
+        "icon": {
+            "item": "minecraft:arrow"
+        },
+        "title": {"text": "解锁新附魔：力量","color": "blue" },
+        "description": "这个附魔可以附魔在弓上，可以增加弓箭伤害。",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "ench_power": {
+          "trigger": "minecraft:enchanted_item",
+          "conditions": {
+            "item": {
+              "tag": "more_achievement:tools",
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:power",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            } 
+          }
+        }
+      },
+      "rewards": {
+          "experience": 10
+      }
+    }

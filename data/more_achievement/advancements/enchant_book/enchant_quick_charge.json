@@ -1,0 +1,35 @@
+{
+    "parent": "more_achievement:enchant_book/enchant_root",
+    "display": {
+        "icon": {
+            "item": "minecraft:crossbow"
+        },
+        "title": {"text": "解锁新附魔：快速装填","color": "blue" },
+        "description": "这个附魔可以附魔在弩上，可以让弩装载箭更快。",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "ench_quick_charge": {
+          "trigger": "minecraft:enchanted_item",
+          "conditions": {
+            "item": {
+              "tag": "more_achievement:tools",
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:quick_charge",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            } 
+          }
+        }
+      },
+      "rewards": {
+          "experience": 10
+      }
+    }

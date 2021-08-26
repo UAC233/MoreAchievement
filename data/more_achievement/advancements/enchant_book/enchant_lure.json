@@ -1,0 +1,35 @@
+{
+    "parent": "more_achievement:enchant_book/enchant_luck_of_the_sea",
+    "display": {
+        "icon": {
+            "item": "minecraft:tropical_fish"
+        },
+        "title": {"text": "解锁新附魔：饵钓","color": "blue" },
+        "description": "这是一个很厉害的附魔，他可以用在钓鱼竿上，以便简短钓鱼速度。",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "ench_lure": {
+          "trigger": "minecraft:enchanted_item",
+          "conditions": {
+            "item": {
+              "tag": "more_achievement:tools",
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:lure",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            } 
+          }
+        }
+      },
+      "rewards": {
+          "experience": 10
+      }
+    }

@@ -1,0 +1,35 @@
+{
+    "parent": "more_achievement:enchant_book/enchant_root",
+    "display": {
+        "icon": {
+            "item": "minecraft:water_bucket"
+        },
+        "title": {"text": "解锁新附魔：海之眷顾","color": "blue" },
+        "description": "这个附魔可以附魔在钓鱼竿上，会增加钓上好战利品的概率",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "ench_luck_of_the_sea": {
+          "trigger": "minecraft:enchanted_item",
+          "conditions": {
+            "item": {
+              "tag": "more_achievement:tools",
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:luck_of_the_sea",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            } 
+          }
+        }
+      },
+      "rewards": {
+          "experience": 10
+      }
+    }

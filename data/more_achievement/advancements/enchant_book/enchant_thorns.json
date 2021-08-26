@@ -1,0 +1,35 @@
+{
+    "parent": "more_achievement:enchant_book/enchant_fire_protection",
+    "display": {
+        "icon": {
+            "item": "minecraft:cactus"
+        },
+        "title": {"text": "解锁新附魔：荆棘","color": "blue" },
+        "description": "这是一个很厉害的附魔，如果玩家/怪物攻击你，攻击你的人同样也会收到一部分伤害",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "ench_thorns": {
+          "trigger": "minecraft:enchanted_item",
+          "conditions": {
+            "item": {
+              "tag": "more_achievement:tools",
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:thorns",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            } 
+          }
+        }
+      },
+      "rewards": {
+          "experience": 10
+      }
+    }

@@ -1,0 +1,32 @@
+{
+    "parent": "more_achievement:altitude_sickness",
+    "display": {
+        "icon": {
+            "item": "minecraft:shulker_shell"
+        },
+        "title": {
+            "text": "高原反应，但是是漂浮上去。"
+        },
+        "description": "拥有漂浮状态效果漂浮到主世界高度209~255格即可达成。",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "y_135_255_levitation": {
+            "trigger": "minecraft:levitation",
+            "conditions": {
+                "dimension": "overworld",
+                "distance": {
+                    "y": {
+                      "min": 135
+                    }
+                  }
+                }
+              }
+            },
+    "rewards": {
+        "experience": 100
+    }
+}

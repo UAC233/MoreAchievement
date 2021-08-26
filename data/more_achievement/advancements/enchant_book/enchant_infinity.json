@@ -1,0 +1,35 @@
+{
+    "parent": "more_achievement:enchant_book/enchant_flame",
+    "display": {
+        "icon": {
+            "item": "minecraft:bow"
+        },
+        "title": {"text": "解锁新附魔：无限","color": "blue" },
+        "description": "这个附魔可以附魔在弓上，会让箭矢不消耗（需要一根，概率消耗），和经验修补冲突。",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "ench_infinity": {
+          "trigger": "minecraft:enchanted_item",
+          "conditions": {
+            "item": {
+              "tag": "more_achievement:tools",
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:infinity",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            } 
+          }
+        }
+      },
+      "rewards": {
+          "experience": 10
+      }
+    }

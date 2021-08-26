@@ -1,0 +1,35 @@
+{
+    "parent": "more_achievement:enchant_book/enchant_impaling",
+    "display": {
+        "icon": {
+            "item": "minecraft:end_rod"
+        },
+        "title": {"text": "解锁新附魔：引雷","color": "blue" },
+        "description": "可以附魔在三叉戟上，在雷雨天击中实体会霹雷。",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "ench_channeling": {
+          "trigger": "minecraft:enchanted_item",
+          "conditions": {
+            "item": {
+              "tag": "more_achievement:tools",
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:channeling",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            } 
+          }
+        }
+      },
+      "rewards": {
+          "experience": 10
+      }
+    }

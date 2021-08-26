@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:knowledge_book"
+        },
+        "title": "生物群系百科",
+        "description": "获得工作台即可解锁",
+        "frame": "task",
+        "background": "minecraft:textures/block/sand.png",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "crafting_table_biome": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "item": "minecraft:crafting_table"
+              }
+            ]
+          }
+        }
+      }
+}

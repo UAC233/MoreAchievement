@@ -1,0 +1,35 @@
+{
+    "parent": "more_achievement:enchant_book/enchant_quick_charge",
+    "display": {
+        "icon": {
+            "item": "minecraft:pumpkin_seeds"
+        },
+        "title": {"text": "解锁新附魔：多重射击","color": "blue" },
+        "description": "可以附魔在弩上，射出来的箭会变成三个。",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "ench_multishot": {
+          "trigger": "minecraft:enchanted_item",
+          "conditions": {
+            "item": {
+              "tag": "more_achievement:tools",
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:multishot",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            } 
+          }
+        }
+      },
+      "rewards": {
+          "experience": 10
+      }
+    }

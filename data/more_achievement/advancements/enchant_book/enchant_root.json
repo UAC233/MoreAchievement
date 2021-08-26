@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:knowledge_book"
+        },
+        "background": "minecraft:textures/block/bookshelf.png",
+        "title": "附魔百科",
+        "description": "第一次附魔即可解锁",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "enchanted_table": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [{"item": "minecraft:enchanting_table"}]
+            }
+        },
+        "enchant":{
+            "trigger": "minecraft:enchanted_item",
+            "conditions": {}
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "parent": "more_achievement:enchant_book/enchant_sharpness",
+    "display": {
+        "icon": {
+            "item": "minecraft:zombie_head"
+        },
+        "title": {"text": "解锁新附魔：亡灵杀手","color": "blue" },
+        "description": "这个附魔可以附魔在剑上，可以让亡灵类生物受到的伤害增加。",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "ench_smite": {
+          "trigger": "minecraft:enchanted_item",
+          "conditions": {
+            "item": {
+              "tag": "more_achievement:tools",
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:smite",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            } 
+          }
+        }
+      },
+      "rewards": {
+          "experience": 10
+      }
+    }

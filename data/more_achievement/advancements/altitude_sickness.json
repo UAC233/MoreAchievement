@@ -1,0 +1,30 @@
+{
+    "parent": "more_achievement:root",
+    "display": {
+        "icon": {
+            "item": "minecraft:snow_block"
+        },
+        "title": {
+            "text": "高原反应"
+        },
+        "description": "在主世界高度135~255格即可达成。",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "y_135_255": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "dimension": "overworld",
+                "position": {
+                    "y": {
+                        "min": 135,
+                        "max": 255
+                    }
+                }
+            }
+        }
+    }
+}

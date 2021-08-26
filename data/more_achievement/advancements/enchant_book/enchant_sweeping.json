@@ -1,0 +1,35 @@
+{
+    "parent": "more_achievement:enchant_book/enchant_sharpness",
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_sword"
+        },
+        "title": {"text": "解锁新附魔：横扫之刃","color": "blue" },
+        "description": "这个附魔可以附魔在剑上，剑横扫的范围会更大",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "ench_sweeping": {
+          "trigger": "minecraft:enchanted_item",
+          "conditions": {
+            "item": {
+              "tag": "more_achievement:tools",
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:sweeping",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            } 
+          }
+        }
+      },
+      "rewards": {
+          "experience": 10
+      }
+    }

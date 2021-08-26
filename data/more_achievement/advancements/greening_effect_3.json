@@ -1,0 +1,47 @@
+{
+  "parent": "more_achievement:greening_effect_2",
+  "display": {
+    "icon": {
+      "item": "minecraft:oak_sapling"
+    },
+    "title": {
+      "text": "绿化作用 III"
+    },
+    "description": "在末地种一个橡树树苗，并且把他催熟",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "palce_oak_sapling_III": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:oak_sapling",
+        "location": {
+          "dimension": "the_end"
+        },
+        "item": {
+          "item": "minecraft:oak_sapling"
+        }
+      }
+    },
+    "use_bone_meal_III": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": {
+          "dimension": "the_end",
+          "block": {
+            "block": "minecraft:oak_sapling"
+          }
+        },
+        "item": {
+          "item": "minecraft:bone_meal"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20
+  }
+}

@@ -1,0 +1,35 @@
+{
+    "parent": "more_achievement:enchant_book/enchant_sharpness",
+    "display": {
+        "icon": {
+            "item": "minecraft:bone"
+        },
+        "title": {"text": "解锁新附魔：节肢杀手","color": "blue" },
+        "description": "这个附魔可以附魔在剑上，会让节肢类怪物收到的伤害提升",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "ench_bane_of_arthropods": {
+          "trigger": "minecraft:enchanted_item",
+          "conditions": {
+            "item": {
+              "tag": "more_achievement:tools",
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:bane_of_arthropods",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            } 
+          }
+        }
+      },
+      "rewards": {
+          "experience": 10
+      }
+    }

@@ -1,0 +1,35 @@
+{
+    "parent": "more_achievement:enchant_book/enchant_root",
+    "display": {
+        "icon": {
+            "item": "minecraft:chainmail_chestplate"
+        },
+        "title": {"text": "解锁新附魔：火焰保护","color": "blue" },
+        "description": "这个附魔可以附魔在装备上，可以抵消火焰伤害，由附魔等级而定",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "ench_fire_protection": {
+          "trigger": "minecraft:enchanted_item",
+          "conditions": {
+            "item": {
+              "tag": "more_achievement:tools",
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:fire_protection",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            } 
+          }
+        }
+      },
+      "rewards": {
+          "experience": 10
+      }
+    }

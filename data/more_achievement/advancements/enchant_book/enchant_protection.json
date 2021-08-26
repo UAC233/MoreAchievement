@@ -1,0 +1,35 @@
+{
+    "parent": "more_achievement:enchant_book/enchant_fire_protection",
+    "display": {
+        "icon": {
+            "item": "minecraft:netherite_scrap"
+        },
+        "title": {"text": "解锁新附魔：保护","color": "blue" },
+        "description": "这是一个很厉害的附魔，他可以用在装备上，会抵消一些部分伤害。",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "ench_protection": {
+          "trigger": "minecraft:enchanted_item",
+          "conditions": {
+            "item": {
+              "tag": "more_achievement:tools",
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:protection",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            } 
+          }
+        }
+      },
+      "rewards": {
+          "experience": 10
+      }
+    }

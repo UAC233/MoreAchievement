@@ -1,0 +1,35 @@
+{
+    "parent": "more_achievement:enchant_book/enchant_luck_of_the_sea",
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_ingot"
+        },
+        "title": {"text": "解锁新附魔：耐久","color": "blue" },
+        "description": "这个附魔可以附魔在任何工具上，工具会更耐用",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "ench_unbreaking": {
+          "trigger": "minecraft:enchanted_item",
+          "conditions": {
+            "item": {
+              "tag": "more_achievement:tools",
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:unbreaking",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            } 
+          }
+        }
+      },
+      "rewards": {
+          "experience": 10
+      }
+    }

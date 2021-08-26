@@ -1,0 +1,67 @@
+{
+    "values": 
+    [
+        "minecraft:wooden_sword",
+        "minecraft:stone_sword",
+        "minecraft:golden_sword",
+        "minecraft:iron_sword",
+        "minecraft:diamond_sword",
+        "minecraft:netherite_sword",
+
+        "minecraft:wooden_axe",
+        "minecraft:stone_axe",
+        "minecraft:golden_axe",
+        "minecraft:iron_axe",
+        "minecraft:diamond_axe",
+        "minecraft:netherite_axe",
+
+        "minecraft:wooden_pickaxe",
+        "minecraft:stone_pickaxe",
+        "minecraft:golden_pickaxe",
+        "minecraft:iron_pickaxe",
+        "minecraft:diamond_pickaxe",
+        "minecraft:netherite_pickaxe",
+
+        "minecraft:wooden_shovel",
+        "minecraft:stone_shovel",
+        "minecraft:golden_shovel",
+        "minecraft:iron_shovel",
+        "minecraft:diamond_shovel",
+        "minecraft:netherite_shovel",
+
+        
+        "minecraft:wooden_hoe",
+        "minecraft:stone_hoe",
+        "minecraft:golden_hoe",
+        "minecraft:iron_hoe",
+        "minecraft:diamond_hoe",
+        "minecraft:netherite_hoe",
+
+        "minecraft:fishing_rod",
+        "minecraft:bow",
+        "minecraft:flint_and_steel",
+        "minecraft:shears",
+
+        "minecraft:chainmail_helmet",
+        "minecraft:chainmail_chestplate",
+        "minecraft:chainmail_leggings",
+        "minecraft:chainmail_boots",
+
+        "minecraft:iron_helmet",
+        "minecraft:iron_chestplate",
+        "minecraft:iron_leggings",
+        "minecraft:iron_boots",
+
+        "minecraft:diamond_helmet",
+        "minecraft:diamond_chestplate",
+        "minecraft:diamond_leggings",
+        "minecraft:diamond_boots",
+
+        "minecraft:netherite_helmet",
+        "minecraft:netherite_chestplate",
+        "minecraft:netherite_leggings",
+        "minecraft:netherite_boots",
+
+        "minecraft:book"
+    ]
+}

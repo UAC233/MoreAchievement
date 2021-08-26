@@ -1,0 +1,44 @@
+{
+  "parent": "more_achievement:greening_effect",
+  "display": {
+    "icon": {
+      "item": "minecraft:oak_sapling"
+    },
+    "title": {
+      "text": "绿化作用 II"
+    },
+    "description": "在地狱种一个橡树树苗，并且把他催熟",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "palce_oak_sapling_II": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:oak_sapling",
+        "location": {
+          "dimension": "the_nether"
+        },
+        "item": {
+          "item": "minecraft:oak_sapling"
+        }
+      }
+    },
+    "use_bone_meal_II": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": {
+          "dimension": "the_nether",
+          "block": {
+            "block": "minecraft:oak_sapling"
+          }
+        },
+        "item": {
+          "item": "minecraft:bone_meal"
+        }
+      }
+    }
+  }
+}

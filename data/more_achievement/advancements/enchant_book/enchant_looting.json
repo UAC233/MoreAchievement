@@ -1,0 +1,35 @@
+{
+    "parent": "more_achievement:enchant_book/enchant_sharpness",
+    "display": {
+        "icon": {
+            "item": "minecraft:rotten_flesh"
+        },
+        "title": {"text": "解锁新附魔：抢夺","color": "blue" },
+        "description": "这个附魔可以附魔在剑上，击败怪物会增加爆战利品的概率",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "ench_looting": {
+          "trigger": "minecraft:enchanted_item",
+          "conditions": {
+            "item": {
+              "tag": "more_achievement:tools",
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:looting",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            } 
+          }
+        }
+      },
+      "rewards": {
+          "experience": 10
+      }
+    }
